@@ -1,0 +1,61 @@
+h1 { /* Will Style all tags matching this selector */
+	color: purple; 	/*Named Colors*/
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid; /*dashed*/
+	/* All 3 of these are needed */
+
+	/* Equivalent Syntax */
+	/* border: 5px solid purple; */
+}
+
+li { /* Element Selector */
+	color: #F400DD; /*HEXADECIMAL*/
+}
+
+#given_id { /* ID Selector */
+	color: red;
+}
+
+.highlighted { /* Class Selector */
+	background: yellow;
+	text-decoration: line-through;
+}
+
+h4 {
+	background: rgb(255,100,80);
+	color: rgb(5, 100, 87); /*RGB*/
+}
+
+body {
+	/* background: pink; */
+	/* background: url(http://www.graphicsbeam.com/wp-content/uploads/2013/03/Drawn-Wood-Grain-Texture-520x301.jpg); */
+	/* background-repeat: no-repeat; /* prevent same image from repeating itself to fill the window */ */
+	/* background-size: cover; /* stretch to the window */ */
+}
+
+/* ADVANCED CSS SELECTORS */
+/* Star */
+* {
+	border: 1px solid lightgrey;
+}
+
+/* Descendant */
+ul p { /* All p elements inside ul */
+	color: darkgreen /* Will Select the two p's */
+}
+
+/* Adjacent */
+h4 + p { /* all p elements that immediately follow an h4 */
+	border: 5px solid red;
+}
+
+/* Attribute Selector */
+a[href="google.com"] {
+	background: lightblue
+}
+
+/* nth of type */
+li:nth-of-type(3) {
+	background: orange
+}
