@@ -35,8 +35,11 @@
 ### Validations
   * Presence validation: Something is not empty
   * Format validation: e.g. make sure email has @ in the input
+  * Length validation: Make sure input is between a specified length
 
 ### Dropdowns and Radio Buttons
-  * Created radio buttons, and passed a value based on the button checked to submit url
-  * Created dropdowns and passed the selected value to the submit url
-  * Textarea inputs for blobs of text with defined rows and size
+ * Created radio buttons, and passed a value based on the button checked to submit url
+ * Created dropdowns and passed the selected value to the submit url
+   * When working with dates, you can simply add Month as the first option in the select followed by Jan, Feb and so on
+ * Textarea inputs for blobs of text with defined rows and size
+ * In general, name is the name of the query param, value is the value of the query param
