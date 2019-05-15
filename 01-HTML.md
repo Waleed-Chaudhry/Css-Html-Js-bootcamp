@@ -14,4 +14,6 @@
 ### Attritubes
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 * Key value pairs
-* Examples covered: Images (Img) and links (Anchor)
+* Examples covered: 
+  * Images (Img) and changing their width
+  * Links (anchor) and adding custom text to links
