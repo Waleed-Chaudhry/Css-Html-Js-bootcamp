@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables and Forms</title>
+  </head>
+  <body>
+    <!-- TABLES -->
+    <table border = "1">
+      <!-- thead and tbody are just stylistic/best pratice things -->
+      <!-- They don't actually change anything -->
+      <thead>
+        <!-- Each row (tr) -->
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> <!-- Row 1 -->
+          <td>Rusty</td>
+          <td>2</td>
+        </tr>
+        <tr> <!-- Row 2 -->
+          <td>Wyatt</td>
+          <td>13</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- FORMS -->
+    <h1>Login</h1>
+    <!-- action - the URL we send the form data to  -->
+    <!-- method - the type of HTTP request (GET/POST) -->
+    <form action = "http://wikipedia.org" method="GET">
+      <label>
+        Username:
+        <input name="email" type="email" placeholder="username" required>
+        <!-- Required makes sure that the user actually enters the input -->
+        <!-- type email validates that @ is present in the input -->
+      </label>
+      <label>
+        Password:
+        <input name="password" type="password" placeholder="password"
+          pattern=".{5,10}" required title="Password must be between
+          5 and 10 charachers">
+      </label>
+      <!-- Can also use for inside label to match to id of the input -->
+
+      <input type="submit">
+      <!-- Name attribute adds a query string to the action (url)  -->
+      <!-- e.g. https://www.wikipedia.org/?username=wuchaudh&password=123123 -->
+    </form>
+
+    <!-- RADIO/DROPDOWN AND TEXTAREA BUTTONS -->
+    <!-- Can only select one option e.g. male or female -->
+    <form>
+      <div> <!-- Div creates new lines -->
+        <p>Do you prefer cats or dogs?</p>
+        <input id="dogs" name="petChoice" type="radio" value="d">
+        <label for="dogs">Dogs: </label>
+
+        <input id="cats" name="petChoice" type="radio" value="c">
+        <label for="cats">Cats: </label>
+        <!-- Having the same name ties the inputs together so you can only pick of one the two -->
+        <!-- Value lets you pass a query param to the request -->
+        <!-- Selecting cats submits the request: file:///baseDir/html/tablesAndForms.html?petChoice=c  -->
+      </div>
+
+      <div>
+        <p>What's your current mood</p>
+        <select name="mood">
+          <option value="happy">:)</option> <!-- :) is displayed on the dropdown-->
+          <option value="neutral">:|</option>
+          <option value="sad">:(</option>
+          <!-- Selecting :) subs the request: file:///baseDir/html/tablesAndForms.html?mood=happy-->
+        </select>
+      </div>
+
+      <div>
+        <textarea name="paragraph" rows="5" cols="10"></textarea>
+      </div>
+
+      <button>Go!</button>
+      <!-- Button at the end submits the form-->
+    </form>
+
+
+  </body>
+</html>
