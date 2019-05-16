@@ -1,0 +1,40 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 20px solid #bdc3c7; /* Color outside the border */
+  padding: 20px;
+
+  /* Center allign with 80% of the screen covered */
+  width: 80%;
+  margin: 20px auto;
+  max-width: 700px; /* Keeps it at 700 px as you resize horizontally */
+}
+
+h2 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.post {
+  margin-bottom: 20px; /* Space between the two blogs */
+}
+
+.date {
+  color: #3498db;
+  letter-spacing: 0.2rem; /* Adding horizontal space between the letters */
+  /* rem is set by the root element, without regards to any parents etc */
+  text-transform: uppercase;
+}
+
+.quote{
+  border-left: 5px solid #bdc3c7; /* Vertical line around the quote */
+  padding-left: 5px;
+}
+
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,23 @@
+p {
+
+/* Content - Width and Height */
+border: 2px solid blue; /* Border */
+width: 50%; /* Otherwise it goes all the way to the end of the screen */
+/* 50% of the parent object bodby in this case, resizes when you change window size  */
+/* height: 150px */
+
+/* Padding */
+padding: 10px; /* On all sides, by default /*
+padding-left: 40px; // for left side only
+
+/* Margin */
+/* margin: 100px; */
+/*margin-top: 500px;*/
+/*top, right, bottom, left */
+/* margin: 20px 40px 500px 100px; */
+/* To Center align because width is 50% */
+/* margin: 0 auto 0 auto; */
+/* Also to center align */
+/* margin: 0 auto; */
+margin: 50px 20px; /* 50 on top and bottom, 20 on left and right */
+}
