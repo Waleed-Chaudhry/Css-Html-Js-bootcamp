@@ -3,3 +3,4 @@
 * html followed by TAB creates the HTML boilerplate code
 * Ctrl click multiple likes to edit them all at once
 * Select text and press Ctrl + d to select the next instance of that same text
+* Change spaces to tabs: cmd + shift + p: convert tabs to spaces
