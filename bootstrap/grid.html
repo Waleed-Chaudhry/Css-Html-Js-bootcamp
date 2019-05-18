@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <style type="text/css">
+  .pink {
+    background: pink;
+    border: 1px solid purple;
+  }
+  .orange {
+    background: orange;
+    border: 1px dashed red;
+    height: 50px;
+  }
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+		<!-- 12 columns, each is 1 unit wide (col-lg-1) when the layout is large-->
+		<!-- When he hit medium size, each will take up 2 units (col-md-2 pink) -->
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+  </div>
+  <div class="row">
+		<!-- Large isn't explicity set so that defaults to the medium i.e. 3 units -->
+    <div class="col-md-3 col-sm-6 pink">
+			<!-- Splitting the left most columns into 2 further columns -->
+      <div class="row">
+        <div class="col-lg-6 orange">FIRST HALF</div>
+        <div class="col-lg-6 orange">OTHER HALF</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pink">TOUR DATE!</div>
+		<div class="col-md-3 col-sm-6 pink">TOUR DATE!</div>
+    <div class="col-md-3 col-sm-6 pink">TOUR DATE!</div>
+  </div>
+</div>
+</body>
+</html>
