@@ -46,7 +46,7 @@ document.body.innerHTML = "<h1>GoodBye<h1>" // Will set the html
 ```
 
 ### Manipulating Attributes
-* ```	<img src="https://barrelhorseworld.com/dogs/images/1145556d.jpg">```
+```	<img src="https://barrelhorseworld.com/dogs/images/1145556d.jpg">```
 ```javascript
 var img = document.getElementsByTagName("img")[0]
 img.getAttribute("src") //"https://barrelhorseworld.com/dogs/images/1145556d.jpg"
@@ -64,3 +64,14 @@ for (var i = 0; i < links.length; i++) {
   links[i].setAttribute("href", "http://www.bing.com");
 }
 ```
+
+### Events
+* Clicking, pressing a key, hovering, dragging and dropping
+* Select an element and then add an event listener it
+  * The type of event e.g. a click, change of a text value (scorekeeper)
+  * The function to run when the event occurs - can be a named function or an anonymous function
+* Can have more than one listener on a given element
+* Generally a good idea to give all your html elements an id
+* Event listners covered in TODO: 
+  * mouse over
+  * mouse out
